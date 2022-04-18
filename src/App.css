@@ -1,38 +1,81 @@
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Press Start 2P", "VT323";
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+ * {
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  overflow: visible;
+  margin-top: 100px;
+  background-image: url("./assets/background/throw_green_pill.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: rgb(199, 196, 196);
+}
+
+/* Footer */
+.footer {
+  overflow: hidden;
+  position: fixed; /* Set the footer to fixed position */
+  bottom: 0; /* Position the footer at the bottom of the page */
+  width: 100%; /* Full width */
+  
+}
+
+.overlay{
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  /* position: fixed;  */
+}
+/*
+.moving-background{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/background/parallax-bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 40% 40%;
+} */
+
+.moving-background{
+  /* margin-top: 60px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/background/throw_green_pill.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+
